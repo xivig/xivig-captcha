@@ -10,7 +10,7 @@
     "security",
     "xivig"
   ],
-  "homepage": "https://github.com/cyberword/xivig-captcha",
+  "homepage": "https://github.com/xivig/xivig-captcha",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -34,7 +34,7 @@
   "suggest": {
     "psr/simple-cache": "To use Redis or Memcached via PSR-16 cache adapters (^3.0)",
     "psr/http-server-middleware": "To use the PSR-15 middleware adapter for Symfony, Slim or Mezzio (^1.0)",
-    "illuminate/support": "For deep Laravel service provider and validation integration (^10.0|^11.0|^12.0)"
+    "illuminate/support": "For deep Laravel service provider and validation integration (^10.0|^11.0|^12.0|^13.0)"
   },
   "autoload": {
     "psr-4": {

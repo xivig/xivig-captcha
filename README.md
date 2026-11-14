@@ -1,5 +1,11 @@
 # Xivig CAPTCHA — Aegis PHP Anti-Abuse Toolkit
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/xivig/captcha.svg?style=flat-square)](https://packagist.org/packages/xivig/captcha)
+[![Total Downloads](https://img.shields.io/packagist/dt/xivig/captcha.svg?style=flat-square)](https://packagist.org/packages/xivig/captcha)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+[![PHP Version](https://img.shields.io/badge/php-%3E%3D8.2-8892BF.svg?style=flat-square)](https://php.net)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/xivig/xivig-captcha/ci.yml?branch=main&style=flat-square)](https://github.com/xivig/xivig-captcha/actions)
+
 `xivig/captcha` is a framework-agnostic PHP challenge component. It issues short-lived authenticated challenges and asks the browser to solve a bounded SHA-256 proof-of-work puzzle. It includes Laravel, native PHP and PSR-15 integration points.
 
 > **Security boundary:** A valid proof-of-work shows that the challenge was completed. It does not prove that a visitor is human. Use Aegis alongside server-side rate limiting, CSRF protection, input validation, account security and abuse monitoring. For high-risk applications, consider a managed challenge/risk service with accessibility and privacy guarantees.
