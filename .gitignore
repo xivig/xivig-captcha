@@ -1,0 +1,22 @@
+# Composer
+/vendor/
+composer.lock
+
+# Testing & Coverage
+.phpunit.cache/
+.phpunit.result.cache
+coverage/
+*.coverage
+
+# Temporary files & storage
+storage/
+.aegis.lock
+*.log
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

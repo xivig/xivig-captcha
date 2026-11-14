@@ -1,0 +1,129 @@
+.aegis-guard-widget {
+    margin: 12px 0;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.aegis-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    font-size: 13px;
+    color: #475569;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.aegis-badge.aegis-success {
+    border-color: #a7f3d0;
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.aegis-badge.aegis-error {
+    border-color: #fecaca;
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+.aegis-retry {
+    margin-left: 6px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #b91c1c;
+    background: #fee2e2;
+    border: 1px solid #fca5a5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.aegis-retry:hover {
+    background: #fecaca;
+}
+
+.aegis-retry:focus-visible {
+    outline: 2px solid #ef4444;
+    outline-offset: 2px;
+}
+
+/* Interactive Slider Puzzle Styles */
+.aegis-interactive-box {
+    padding: 12px;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    width: 290px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.aegis-interactive-title {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.aegis-slider-track {
+    position: relative;
+    width: 280px;
+    height: 38px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.aegis-slider-target {
+    position: absolute;
+    top: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #a7f3d0;
+    border: 2px dashed #059669;
+    box-sizing: border-box;
+}
+
+.aegis-slider-handle {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background 0.15s;
+}
+
+.aegis-slider-handle:hover {
+    background: #1d4ed8;
+}
+
+.aegis-slider-handle:active {
+    cursor: grabbing;
+}
+
+.aegis-slider-handle:focus-visible {
+    outline: 2px solid #1e40af;
+    outline-offset: 2px;
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+    .aegis-badge, .aegis-slider-handle {
+        transition: none;
+    }
+}

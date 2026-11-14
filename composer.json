@@ -1,0 +1,61 @@
+{
+  "name": "xivig/captcha",
+  "description": "Privacy-conscious, framework-agnostic PHP challenge and anti-abuse toolkit",
+  "keywords": [
+    "captcha",
+    "anti-abuse",
+    "proof-of-work",
+    "laravel",
+    "php",
+    "security",
+    "xivig"
+  ],
+  "homepage": "https://github.com/cyberword/xivig-captcha",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "CyberWord",
+      "role": "Lead Architect"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "ext-openssl": "*",
+    "ext-json": "*",
+    "ext-hash": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0",
+    "psr/simple-cache": "^3.0",
+    "psr/http-server-middleware": "^1.0",
+    "psr/http-message": "^2.0"
+  },
+  "suggest": {
+    "psr/simple-cache": "To use Redis or Memcached via PSR-16 cache adapters (^3.0)",
+    "psr/http-server-middleware": "To use the PSR-15 middleware adapter for Symfony, Slim or Mezzio (^1.0)",
+    "illuminate/support": "For deep Laravel service provider and validation integration (^10.0|^11.0|^12.0)"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aegis\\Captcha\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Aegis\\Captcha\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Aegis\\Captcha\\Adapters\\Laravel\\AegisServiceProvider"
+      ],
+      "aliases": {
+        "Aegis": "Aegis\\Captcha\\Adapters\\Laravel\\AegisFacade"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
